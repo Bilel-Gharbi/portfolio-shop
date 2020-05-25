@@ -14,11 +14,12 @@ const App = () => {
       <SwiperContainer>
         <TitleContainer>
           <Text>text description </Text>
-          <Text>text description </Text>
-          <Text>text description </Text>
-          <Text>text description </Text>
         </TitleContainer>
-        <FlipEffect />
+
+        {/* swiper */}
+        <SwiperWidth>
+          <FlipEffect />
+        </SwiperWidth>
 
         <Button />
       </SwiperContainer>
@@ -33,20 +34,24 @@ const App = () => {
 export default App;
 
 const SwiperContainer = styled.div`
-  margin-top: 20%;
-  position: absolute;
+  display: flex;
   width: 100%;
+  height: calc(100vh - 33px);
+  flex-direction: column;
+  justify-content: space-evenly;
   font-family: "Montserrat";
 `;
+
 const TitleContainer = styled.div`
-  position: absolute;
+  text-align: center;
   font-size: 20px;
-  left: 50%;
-  top: -20%;
-  transform: translate(-50%, -50%);
 `;
 const Text = styled.h3`
   letter-spacing: 3px;
   font-size: 36px;
   color: white;
+`;
+const SwiperWidth = styled.div`
+  width: 100vw;
+  max-width: 100vw;
 `;

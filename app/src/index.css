@@ -22,8 +22,8 @@ body {
 .header {
   background-size: cover;
   color: #fff;
-  max-height: 500px;
-  height: auto;
+  /* max-height: 500px; */
+  height: 100vh;
 }
 .header canvas {
   position: absolute;
